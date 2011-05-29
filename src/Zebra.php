@@ -1,12 +1,15 @@
 <?php
 
 class Zebra{
-	private $state = 'even';
+	private $state;
 
-	private static $states = array(
-		'odd' => 'even',
-		'even' => 'odd');
+	private $states = array();
+
+	public function __construct(array $states = array('odd', 'even')){
+		for($i=0, $l=count($states); $i<$l; $i++){
+			$this->states[$states[$i]] = $states[($i+1)%$l];}
+		$this->state = $states[count($states)-1];}
 
 	public function __toString(){
-		$this->state = self::$states[$this->state];
+		$this->state = $this->states[$this->state];
 		return $this->state;}}
