@@ -10,4 +10,12 @@ class ZebraTest extends PHPUnit_Framework_TestCase{
 
 	public function test_simple_custom_striping(){
 		$zebra = new Zebra(array('one', 'two', 'three'));
-		$this->assertEquals('one two three one', $zebra.' '.$zebra.' '.$zebra.' '.$zebra);}}
+		$this->assertEquals('one two three one', $zebra.' '.$zebra.' '.$zebra.' '.$zebra);}
+
+	public function test_striping_with_several_value_sets_at_once(){
+		$zebra = new Zebra(array('one', 'two', 'three'), array('odd', 'even'), array('1', '2', '3', '4'));
+		$this->assertEquals('one odd 1', $zebra.'');
+		$this->assertEquals('two even 2', $zebra.'');
+		$this->assertEquals('three odd 3', $zebra.'');
+		$this->assertEquals('one even 4', $zebra.'');
+		$this->assertEquals('two odd 1', $zebra.'');}}
