@@ -18,4 +18,12 @@ class ZebraTest extends PHPUnit_Framework_TestCase{
 		$this->assertEquals('two even 2', $zebra.'');
 		$this->assertEquals('three odd 3', $zebra.'');
 		$this->assertEquals('one even 4', $zebra.'');
-		$this->assertEquals('two odd 1', $zebra.'');}}
+		$this->assertEquals('two odd 1', $zebra.'');}
+
+	public function test_set_with_identical_values_inside(){
+		$zebra = new Zebra(array('a', 'b', 'a', 'c'));
+		$this->assertEquals('a', $zebra.'');
+		$this->assertEquals('b', $zebra.'');
+		$this->assertEquals('a', $zebra.'');
+		$this->assertEquals('c', $zebra.'');
+		$this->assertEquals('a', $zebra.'');}}
