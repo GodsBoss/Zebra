@@ -28,3 +28,12 @@ Usage
     print $z; // Will print 'even 2'.
     print $z; // Will print 'odd 3'.
     print $z; // Will print 'even 1'.
+
+### Use the same value in the same set several times.
+
+    $z = new Zebra(array('foo', 'bar', 'foo', 'baz'));
+    print $z; // Will print 'foo'.
+    print $z; // Will print 'bar'.
+    print $z; // Will print 'foo'.
+    print $z; // Will print 'baz'.
+    print $z; // Will print 'foo'.
