@@ -16,7 +16,10 @@ class Zebra{
 			$this->stateSets[] = $stateSet;
 			$this->states[] = $set[count($set)-1];}}
 
-	public function __toString(){
+	private function next(){
 		foreach($this->states as $index => $value){
-			$this->states[$index] = $this->stateSets[$index][$value];}
+			$this->states[$index] = $this->stateSets[$index][$value];}}
+
+	public function __toString(){
+		$this->next();
 		return implode(' ', $this->states);}}
