@@ -1,7 +1,7 @@
 Zebra striping
 ==============
 
-Mini-project for Zebra striping.
+Mini-project for Zebra striping. Licensed under GPL.
 
 Usage
 -----
