@@ -1,6 +1,8 @@
 <?php
 
-class ZebraTest extends PHPUnit_Framework_TestCase{
+use PHPUnit\Framework\TestCase;
+
+class ZebraTest extends TestCase{
 	public function test_instantiation(){
 		$zebra = new Zebra();}
 

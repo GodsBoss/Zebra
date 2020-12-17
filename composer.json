@@ -2,5 +2,8 @@
     "name": "godsboss/zebra",
     "description": "Zebra striping.",
     "type": "library",
-    "license": "GPL-3.0"
+    "license": "GPL-3.0",
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    }
 }
