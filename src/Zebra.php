@@ -1,5 +1,7 @@
 <?php
 
+namespace GodsBoss\Zebra;
+
 class Zebra{
 	private $states;
 

@@ -1,5 +1,9 @@
 <?php
 
+namespace GodsBoss\Zebra;
+
+use GodsBoss\Zebra\Zebra;
+
 use PHPUnit\Framework\TestCase;
 
 class ZebraTest extends TestCase{
