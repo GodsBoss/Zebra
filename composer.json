@@ -3,6 +3,9 @@
     "description": "Zebra striping.",
     "type": "library",
     "license": "GPL-3.0",
+    "scripts": {
+      "test": "phpunit"
+    },
     "autoload": {
       "psr-4": {
         "GodsBoss\\Zebra\\": "src/"
